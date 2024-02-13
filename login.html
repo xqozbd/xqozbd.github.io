@@ -46,9 +46,15 @@
                     </header>
                 </article>
 
-
-
-
+                <form  align="center">
+                    <input type="email" id="email" />
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="password" id="password" />
+                    <label for="password">Password</label>
+                    <br>
+                    <button id="login-btn">Login</button>
+                  </form>
                 <!-- Copyright details -->
                 <footer style="text-align: right; margin-top: 20px; color: gray;">
                     <br>
@@ -58,5 +64,25 @@
             </div>
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <!-- Below is the additional script for Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+    <script>
+      const firebaseConfig = {
+          apiKey: "AIzaSyBKLzrzD7QKy3CiqkQ3AMkdWGt_WaZTEYA",
+          authDomain: "untitled-pop-company.firebaseapp.com",
+          projectId: "untitled-pop-company",
+          storageBucket: "untitled-pop-company.appspot.com",
+          messagingSenderId: "644274215001",
+          appId: "1:644274215001:web:814aefa42092fe5b9eb948",
+          measurementId: "G-E9PHPBBBLT"
+        };
+      firebase.initializeApp(firebaseConfig);
+
+      const auth = firebase.auth();
+    </script>
+
+    <script src="scripts/index.js"></script>
 </body>
 </html>
