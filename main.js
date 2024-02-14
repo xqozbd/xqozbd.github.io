@@ -108,7 +108,10 @@ function login() {
 }
 
 
-
+function logout(){
+  document.cookie = "authenticated=false";
+  window.location.href = 'login.html';
+}
 
 
 // Validate Functions
