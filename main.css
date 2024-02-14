@@ -5,6 +5,20 @@ body {
     line-height: 1.6;
 }
 
+#content_container {
+    text-align: center;
+    margin: 5% auto;
+}
+
+#form_container {
+    display: inline-block;
+    text-align: left; /* Align form content to the left within container */
+}
+
+#form_content_inner_container {
+    text-align: center;
+}
+
 a {
     color: #5ddd49;
     text-decoration: none;
