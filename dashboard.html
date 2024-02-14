@@ -1,1 +1,33 @@
-<h1>If you are seeing this you have successfully logged in!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Untitled Snack Co</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" />
+    <script src="main.js"></script>
+    <meta http-equiv="cache-control" content="max-age=0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 11:00:00 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Document</title>
+    <script>
+        // Inside dashboard.html or a script included in it
+document.addEventListener("DOMContentLoaded", function () {
+  // Check for the session cookie
+  var isAuthenticated = document.cookie.includes("authenticated=true");
+
+  // If not authenticated, redirect to login page
+  if (!isAuthenticated) {
+    window.location.href = 'login.html'; // Replace with the actual login page URL
+  }
+});
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

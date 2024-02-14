@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var isAuthenticated = document.cookie.includes("authenticated=true");
+      if (isAuthenticated) {
+        window.location.href = 'dashboard.html';
+      }
+    });
+        </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <title>Untitled Snack Co</title>

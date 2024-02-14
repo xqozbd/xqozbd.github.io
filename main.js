@@ -1,3 +1,4 @@
+
 function toggleSidebar() {
     var sidebar = document.getElementById("sidebar");
     var main = document.getElementById("main");
@@ -93,6 +94,7 @@ function login() {
       database_ref.child('users/' + user.uid).update(user_data);
 
       // Redirect to dashboard.html
+      document.cookie = "authenticated=true";
       window.location.href = 'dashboard.html';
 
       // Done
