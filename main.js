@@ -22,10 +22,21 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth()
 const database = firebase.database()
 
+
+function NoAccess(){
+  alert("Account registration is not opened. Check back later")
+}
+
+
 // Set up our register function
 function register () {
   // Get all our input fields
-  email = document.getElementById('email').value
+  enabled = true
+  if (enabled == false){
+    NoAccess()
+  }
+  if (enabled == true){
+    email = document.getElementById('email').value
   password = document.getElementById('password').value
   // Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
@@ -33,7 +44,9 @@ function register () {
     return
     // Don't continue running the code
   }
-
+  }
+  
+  
  
   // Move on with Auth
   auth.createUserWithEmailAndPassword(email, password)
@@ -52,7 +65,7 @@ function register () {
     // Push to Firebase Database
     database_ref.child('users/' + user.uid).set(user_data)
 
-    // DOne
+    // Done
     alert('User Created!!')
   })
   .catch(function(error) {
