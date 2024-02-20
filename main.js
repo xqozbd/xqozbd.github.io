@@ -96,9 +96,6 @@ function login() {
       // Redirect to dashboard.html
       document.cookie = "authenticated=true";
       window.location.href = 'dashboard.html';
-
-      // Done
-      alert('User Logged In!!');
     })
     .catch(function (error) {
       // Handle errors if needed
