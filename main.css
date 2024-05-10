@@ -8,6 +8,7 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-right: 35px;
 }
 
 .dropdown-content {
