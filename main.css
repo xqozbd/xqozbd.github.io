@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #3e3b3b6f;
+    background: linear-gradient(to right, #fc18186f, #00a2ffc7);
 }
 
 .header {
-    background-color: #333;
+    background: linear-gradient(to right, #fc18186f, #00a2ffc7);
     color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -14,8 +14,11 @@ body {
 
 .profile-pic img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: left;
+    margin-top: -70px; /* Add a height offsetter */
 }
 
 .bio {
@@ -25,7 +28,7 @@ body {
 }
 
 .footer {
-    background-color: #333;
+    background: linear-gradient(to right, #fc18186f, #00a2ffc7);
     color: #ffffff;
     text-align: center;
     padding: 10px;
