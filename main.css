@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #fc18186f, #00a2ffc7);
+    background: linear-gradient(to right, #638d9ec7, #05476168);
 }
 
 .navigation {
@@ -41,9 +41,9 @@ body {
 }
 
 .navigation-button {
-    background: linear-gradient(to right, #fc18186f, #00a2ffc7);
+    background: linear-gradient(to right, #99e8fb94, #87acb3);
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 16px;
     font-size: 16px;
     cursor: pointer;
@@ -51,7 +51,7 @@ body {
 
 
 .header {
-    background: linear-gradient(to right, #fc18186f, #00a2ffc7);
+    background: linear-gradient(to right, #20202013, #638d9ec7);
     color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -73,8 +73,8 @@ body {
 }
 
 .footer {
-    background: linear-gradient(to right, #fc18186f, #00a2ffc7);
-    color: #ffffff;
+    background: linear-gradient(to right, #20202013, #638d9ec7);
+    color: #ffffff7c;
     text-align: center;
     padding: 10px;
     position: relative;
