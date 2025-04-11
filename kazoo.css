@@ -1,0 +1,93 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Full page dark background */
+  html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Prevents scrolling in case content overflows */
+  }
+  
+  /* Center container for elements */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Button styling for a vibrant neon look */
+  button {
+    background-color: #1e1e1e;
+    color: #bb86fc;
+    border: 2px solid #bb86fc;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Button hover effect for an engaging feel */
+  button:hover {
+    background-color: #bb86fc;
+    color: #1e1e1e;
+    transform: scale(1.05);
+  }
+  
+  /* Text box styling */
+  input[type="text"] {
+    background-color: #1e1e1e;
+    color: #03dac6;
+    border: 2px solid #03dac6;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focus state for text box for a neon glow effect */
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #bb86fc;
+    box-shadow: 0 0 8px #bb86fc;
+  }
+  
+  /* Optional: custom selection styling */
+  ::selection {
+    background: #bb86fc;
+    color: #121212;
+  }
+  
+  /* Optional: subtle animated background overlay for extra vibe */
+  .background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(187, 134, 252, 0.15), transparent 70%);
+    pointer-events: none; /* Allows clicks through overlay */
+    animation: pulse 5s ease-in-out infinite;
+    z-index: -1;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
